@@ -72,6 +72,10 @@ void loop() {
     digitalWrite(I4, LOW);
   }
 
+  /*
+   * Navigate turns by writing different speeds to the left and right motors using Pulse Width Modulation (PWM)
+   */
+
   //left gentle turn
   else if ((digitalRead(L2) == HIGH) && (digitalRead(L1) == LOW) && (digitalRead(MD) == LOW) && 
   //(digitalRead(R1) == HIGH) && 
@@ -119,6 +123,11 @@ void loop() {
     digitalWrite(I4, LOW);
     delay(32);
   }
+
+/*
+ * Commented out codeblock left here to show what was the ideal case for the vehicle.
+ */
+  
 /*
   //right sharp turn
   else if ((digitalRead(L2) == HIGH) && (digitalRead(L1) == HIGH) && (digitalRead(MD) == LOW) && 
